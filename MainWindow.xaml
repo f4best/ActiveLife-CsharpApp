@@ -1,0 +1,27 @@
+﻿<Window x:Class="programowanieIVprojekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:programowanieIVprojekt"
+        mc:Ignorable="d"
+        Title="ActiveLife" Height="450" Width="400" Icon="/ico.png"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.52">
+                <GradientStop Color="#FFDAFF00"/>
+                <GradientStop Color="#FF717D00" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="login" MaxLength="6" HorizontalAlignment="Left" Margin="135,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30" FontSize="18"/>
+        <PasswordBox x:Name="password" MaxLength="6" HorizontalAlignment="Left" Margin="135,175,0,0" VerticalAlignment="Top" Width="200" Height="30" FontSize="18"/>
+        <Button x:Name="logon" Content="Zaloguj" HorizontalAlignment="Left" Margin="248,242,0,0" VerticalAlignment="Top" Click="logon_Click" Height="40" Width="87" FontSize="18"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="10,19,0,0" VerticalAlignment="Top" Width="196" Source="/logo.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="52" FontSize="18"><Run Language="pl-pl" Text="Login:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="69,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="52" FontSize="18"><Run Language="pl-pl" Text="Hasło:"/></TextBlock>
+        <TextBlock x:Name="message" Foreground="#8B0000" HorizontalAlignment="Left" Margin="135,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ico.png" />
+    <None Remove="logo.png" />
+    <None Remove="png-clipart-computer-icons-sign-magnifier-miscellaneous-glass.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ico.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="png-clipart-computer-icons-sign-magnifier-miscellaneous-glass.png" />
+  </ItemGroup>
+
+</Project>
